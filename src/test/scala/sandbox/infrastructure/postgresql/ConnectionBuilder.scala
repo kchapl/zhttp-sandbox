@@ -1,11 +1,10 @@
 package sandbox.infrastructure.postgresql
 
-import javax.sql.DataSource
-
 import com.dimafeng.testcontainers.PostgreSQLContainer
-import io.getquill.context.ZioJdbc.DataSourceLayer
 import org.postgresql.ds.PGSimpleDataSource
-import zio._
+import zio.*
+
+import javax.sql.DataSource
 
 trait DataSourceBuilder:
   def dataSource: DataSource

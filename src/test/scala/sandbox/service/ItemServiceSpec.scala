@@ -1,13 +1,12 @@
 package sandbox.service
 
-import sandbox.application.ItemService._
-import sandbox.domain._
-import sandbox.infrastructure._
-import zio._
-import zio.mock.Expectation._
-import zio.stream._
-import zio.test._
-import zio.test.Assertion._
+import sandbox.application.ItemService.*
+import sandbox.domain.*
+import sandbox.infrastructure.*
+import zio.*
+import zio.mock.Expectation.*
+import zio.test.*
+import zio.test.Assertion.*
 
 object ItemServiceSpec extends ZIOSpecDefault:
 
