@@ -7,7 +7,7 @@ val postgresqlVersion     = "42.6.0"
 val testContainersVersion = "0.40.17"
 val zioMockVersion        = "1.0.0-RC11"
 val zioHttpVersion        = "3.0.0-RC2"
-val quillVersion          = "4.6.0.1"
+val quillVersion          = "4.8.0"
 
 lazy val root = (project in file("."))
   .settings(
