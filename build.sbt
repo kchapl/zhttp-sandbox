@@ -14,7 +14,7 @@ lazy val root = (project in file("."))
     inThisBuild(
       List(
         organization := "sandbox",
-        scalaVersion := "3.2.2",
+        scalaVersion := "3.3.1",
       )
     ),
     name           := "zhttp-sandbox",
