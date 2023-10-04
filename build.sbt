@@ -13,14 +13,13 @@ lazy val root = (project in file("."))
   .settings(
     inThisBuild(
       List(
-        organization := "sandbox",
-        scalaVersion := "3.3.1",
+        scalaVersion := "3.3.1"
       )
     ),
     name           := "zhttp-sandbox",
     libraryDependencies ++= Seq(
-      "io.getquill"   %% "quill-jdbc-zio"      % quillVersion excludeAll (
-        ExclusionRule(organization = "org.scala-lang.modules")
+      "io.getquill"   %% "quill-jdbc-zio"      % quillVersion excludeAll ExclusionRule(organization =
+        "org.scala-lang.modules"
       ),
       "org.postgresql" % "postgresql"          % postgresqlVersion,
       "dev.zio"       %% "zio"                 % zioVersion,
